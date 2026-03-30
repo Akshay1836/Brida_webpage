@@ -46,8 +46,8 @@ const ProductGallery = () => {
                     <SwiperSlide key={item.id}>
                         <div className="card">
                             <div className="image-wrapper">
-                                <img src={item.img} className="main-img" />
-                                <img src={item.hoverImg} className="hover-img" />
+                                <img src={item.img} alt={item.name} className="main-img" />
+                                <img src={item.hoverImg} alt={`${item.name} hover`} className="hover-img" />
                                 <span className="plus">+</span>
                             </div>
                             <h3>{item.name}</h3>

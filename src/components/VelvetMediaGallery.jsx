@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectCube } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -123,7 +123,7 @@ const VelvetMediaGallery = () => {
             {/* Header */}
             <div className="velvet-modal-top">
               <span className="velvet-modal-username">by.tanji</span>
-              <a href="#" className="velvet-modal-viewpost">View Post</a>
+              <button className="velvet-modal-viewpost" aria-label="View post">View Post</button>
               <button
                 className="velvet-modal-close"
                 onClick={() => setModalIndex(null)}

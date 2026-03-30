@@ -32,12 +32,12 @@ const Navbar = () => {
         <div className="navbar-logo">Tanji Bridal</div>
 
         <div className="navbar-links">
-          <a href="#">Bridal Service</a>
-          <a href="#">Shop</a>
-          <a href="#">About</a>
-          <a href="#">Masterclass</a>
-          <a href="#">Guide</a>
-          <a href="#">Contact</a>
+          <a href="#bridal-service">Bridal Service</a>
+          <a href="#shop">Shop</a>
+          <a href="#about">About</a>
+          <a href="#masterclass">Masterclass</a>
+          <a href="#guide">Guide</a>
+          <a href="#contact">Contact</a>
         </div>
 
         {/* Hamburger */}
@@ -56,12 +56,12 @@ const Navbar = () => {
 
         {/* Links */}
         <div className="mobile-links">
-          <a href="#">BRIDAL SERVICE</a>
-          <a href="#">SHOP</a>
-          <a href="#">ABOUT</a>
-          <a href="#">MASTERCLASS</a>
-          <a href="#">GUIDE</a>
-          <a href="#">CONTACT</a>
+          <a href="#bridal-service">BRIDAL SERVICE</a>
+          <a href="#shop">SHOP</a>
+          <a href="#about">ABOUT</a>
+          <a href="#masterclass">MASTERCLASS</a>
+          <a href="#guide">GUIDE</a>
+          <a href="#contact">CONTACT</a>
         </div>
 
      
