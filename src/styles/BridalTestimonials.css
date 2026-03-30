@@ -1,0 +1,305 @@
+/* BridalTestimonials.css - Modern, Elegant Bridal Testimonials */
+
+.bridal-testimonials-section {
+  background: linear-gradient(135deg, #fafbf9 0%, #f5f3f0 100%);
+  padding: 4rem 0 3rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.bridal-testimonials-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2a1207;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.bridal-testimonials-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #4a5740, transparent);
+}
+
+/* Swiper wrapper for testimonials */
+.bridal-testimonials-swiper-wrapper {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.bridal-testimonials-swiper {
+  padding: 1rem 0;
+}
+
+.swiper-wrapper {
+  padding: 0;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: stretch;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: stretch;
+  min-height: auto;
+}
+
+.testimonial-card {
+  background: #fff;
+  border: 1px solid #e8e4df;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  min-width: 320px;
+  max-width: 380px;
+  flex: 1 1 320px;
+  padding: 2rem 2rem 1.5rem 2rem;
+  color: #2a1207;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #4a5740, transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 8px 25px rgba(74, 87, 64, 0.2);
+  border-color: #d4c5b8;
+  transform: translateY(-4px);
+}
+
+.testimonial-card:hover::before {
+  opacity: 1;
+}
+
+.testimonial-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2a1207;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.testimonial-author {
+  font-size: 0.9rem;
+  color: #999;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+.testimonial-arrow {
+  background: #fff;
+  border: 2px solid #4a5740;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(74, 87, 64, 0.12);
+  outline: none;
+  padding: 0;
+  color: #4a5740;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+
+.testimonial-arrow-prev {
+  left: -70px;
+}
+
+.testimonial-arrow-next {
+  right: -70px;
+}
+
+.testimonial-arrow svg {
+  display: block;
+  stroke: currentColor;
+}
+
+.testimonial-arrow:hover {
+  box-shadow: 0 8px 24px rgba(74, 87, 64, 0.25);
+  background: #4a5740;
+  color: #fff;
+  transform: translateY(-50%) scale(1.08);
+}
+
+/* Pagination Dots */
+.bridal-testimonials-pagination {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.testimonial-bullet {
+  background: rgba(74, 87, 64, 0.3);
+  opacity: 1;
+  transition: all 0.3s ease;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.testimonial-bullet-active {
+  background: #4a5740;
+  width: 24px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .testimonial-arrow-prev {
+    left: -50px;
+  }
+  
+  .testimonial-arrow-next {
+    right: -50px;
+  }
+  
+  .bridal-testimonials-heading {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bridal-testimonials-swiper-wrapper {
+    padding: 0 1rem;
+  }
+  
+  .testimonial-arrow-prev {
+    left: -30px;
+  }
+  
+  .testimonial-arrow-next {
+    right: -30px;
+  }
+  
+  .testimonial-card {
+    padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  }
+  
+  .bridal-testimonials-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .bridal-testimonials-swiper-wrapper {
+    padding: 0 0.5rem;
+  }
+  
+  .testimonial-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .testimonial-arrow-prev {
+    left: -20px;
+  }
+  
+  .testimonial-arrow-next {
+    right: -20px;
+  }
+  
+  .testimonial-card {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 1.2rem 1rem 1rem 1rem;
+  }
+  
+  .testimonial-title {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .testimonial-text {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .testimonial-author {
+    font-size: 0.85rem;
+  }
+  
+  .bridal-testimonials-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bridal-testimonials-pagination {
+    margin-top: 1.5rem;
+  }
+}
+  .testimonial-title {
+    font-size: 1rem;
+  }
+  .testimonial-text {
+    font-size: 0.9rem;
+  }
+  .testimonial-author {
+    font-size: 0.85rem;
+  }
+  .testimonial-arrow {
+    width: 45px;
+    height: 45px;
+  }
+
+

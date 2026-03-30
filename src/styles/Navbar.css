@@ -1,0 +1,138 @@
+/* Theme */
+:root {
+  --brown: #b28c68;
+  --olive: #4a5740;
+  --chocolate: #6f5244;
+  --latte: #2a1207;
+}
+
+/* Announcement */
+.announcement-bar {
+   background: #3f4b36;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+ background: var(--olive);
+   border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+/* Desktop Links */
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+/* Icons */
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--brown);
+  stroke-width: 2;
+  fill: none;
+  cursor: pointer;
+}
+
+/* Menu toggle */
+.menu-toggle {
+  display: none;
+}
+
+/* ================= MOBILE MENU ================= */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0; /* change this */
+  transform: translateX(-100%); /* use transform instead */
+  width: 100%;
+  height: 100%;
+ padding: 60px 25px 30px; 
+  background: var(--olive);
+  color: white;
+
+  transition: transform 0.4s ease;
+  z-index: 2000;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+/* Main container padding */
+
+
+/* Links spacing */
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 28px; /* more breathing space */
+  margin-top: 60px;
+}
+
+/* Links styling */
+.mobile-links a {
+  font-size: 24px;
+  letter-spacing: 1.5px;
+}
+
+/* Bottom section spacing */
+.mobile-bottom {
+  border-top: 1px solid rgba(255,255,255,0.25);
+  padding-top: 25px;
+  margin-top: 40px;
+}
+
+/* Login */
+.login {
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+/* Region */
+.region {
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* Social icons */
+.socials {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+/* Responsive */
+@media (max-width: 900px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}

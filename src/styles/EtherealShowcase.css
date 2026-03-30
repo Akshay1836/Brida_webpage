@@ -1,0 +1,124 @@
+/* EtherealShowcase.css - Modern, Cinematic Hero Section */
+.ethereal-hero {
+  position: relative;
+  width: 100%;
+  min-height: 92vh;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1500&q=80') center right/cover no-repeat;
+  overflow: hidden;
+}
+.ethereal-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #2a1207 0%, rgba(42,18,7,0.85) 40%, rgba(42,18,7,0.0) 100%);
+  z-index: 1;
+}
+.ethereal-hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 60vh;
+  margin-left: 7vw;
+  max-width: 480px;
+  backdrop-filter: blur(2.5px);
+  animation: fadeInUp 1.1s cubic-bezier(.23,1.01,.32,1) 0.1s both;
+}
+.ethereal-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 2.1rem;
+  line-height: 1.08;
+  text-shadow: 0 2px 16px rgba(42,18,7,0.18);
+}
+.ethereal-hero-desc {
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  font-size: 1.15rem;
+  color: #f7f3ef;
+  max-width: 450px;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+  text-shadow: 0 1px 8px rgba(42,18,7,0.10);
+}
+.ethereal-hero-btn {
+  background: #4a5740;
+  color: #2a1207;
+  border: none;
+  border-radius: 0em;
+  padding: 0.85em 2.2em;
+  font-size: 1.18rem;
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  box-shadow: 0 2px 16px rgba(42,18,7,0.10);
+  transition: background 0.3s, color 0.3s, transform 0.3s, opacity 0.3s;
+}
+.ethereal-hero-btn:hover {
+  background: #6f5244;
+  color: #fff;
+  transform: scale(1.045);
+  opacity: 0.92;
+}
+@media (max-width: 900px) {
+  .ethereal-hero-title {
+    font-size: 2.2rem;
+  }
+  .ethereal-hero-content {
+    margin-left: 3vw;
+    min-height: 40vh;
+  }
+}
+@media (max-width: 600px) {
+  .ethereal-hero {
+    align-items: flex-end;
+    background-position: 70% center;
+    min-height: 55vh;
+    height: 55vh;
+    padding: 0 0 1.5rem 0;
+  }
+  .ethereal-hero-content {
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 7vw;
+    min-width: 0;
+    max-width: 98vw;
+    text-align: center;
+    padding: 0 2vw;
+  }
+  .ethereal-hero-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .ethereal-hero-desc {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  .ethereal-hero-btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.7em 0;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+

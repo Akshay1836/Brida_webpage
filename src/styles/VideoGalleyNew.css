@@ -1,0 +1,249 @@
+:root {
+  --brown: #b28c68;
+  --olive: #4a5740;
+  --chocolate: #6f5244;
+  --latte: #2a1207;
+  --bg: #f6f4f1;
+} /* Container */
+.video-gallery {
+  padding: 40px 60px;
+  background: var(--bg);
+} /* Title */
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+  color: var(--latte);
+}
+.velvet-gallery-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.velvet-gallery-title {
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: var(--latte);
+  margin-bottom: 10px;
+}
+.velvet-gallery-subtitle {
+  font-size: 14px;
+  color: var(--chocolate);
+  opacity: 0.8;
+} /* Grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+} /* Card */
+.video-card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.video-card img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.video-card:hover img {
+  transform: scale(1.05);
+} /* Play icon */
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.55); /* subtle dark */
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* SVG size */
+.play-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Hover effect */
+.video-card:hover .play-btn {
+  transform: translate(-50%, -50%) scale(1.15);
+  background: var(--brown);
+}
+/* Center overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+} /* BIG centered play button */
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: rgba(42, 18, 7, 0.8); /* latte */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+} /* Hover effect */
+.video-card:hover .play-btn {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: var(--brown);
+} /* Duration bottom-left */
+.duration {
+  font-size: 12px;
+  color: white;
+} /* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(42, 18, 7, 0.85); /* latte overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+} /* Modal content */
+.modal-content {
+  width: 320px;
+  max-width: 90%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: black;
+}
+.modal-content video {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+} /* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+} /* Navigation */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--brown);
+  border: none;
+  color: white;
+  font-size: 25px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.nav.left {
+  left: 20px;
+}
+.nav.right {
+  right: 20px;
+}
+.nav:hover {
+  background: var(--olive);
+} /* Blur background */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(42, 18, 7, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+} /* Backdrop click layer */
+.modal-backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+} /* Modal content */
+.modal-content {
+  position: relative;
+  width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: black;
+  z-index: 2;
+} /* iframe fix */
+.modal-content iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+} /* Video info */
+.video-info {
+  padding: 10px;
+  background: #2a1207;
+  color: white;
+}
+.video-info h3 {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.video-info p {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.8;
+} /* Overlay on card */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+.duration {
+  font-size: 12px;
+} /* Hover effect */
+.video-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.video-card img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.video-card:hover img {
+  transform: scale(1.05);
+} /* Responsive */
+@media (max-width: 1000px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
