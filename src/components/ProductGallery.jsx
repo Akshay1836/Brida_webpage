@@ -8,7 +8,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const products = [{ id: 1, name: "Brightening Powders", price: "£28.00", img: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80", hoverImg: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60", }, { id: 2, name: "Wedding Cake Concealer", price: "£28.00", img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80", hoverImg: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60", }, { id: 3, name: "Brontour Powders", price: "£28.00", img: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80", hoverImg: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=60", }, { id: 4, name: "Bridal Brush Collection 15 Set", price: "£200.00", img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80", hoverImg: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=60", }, { id: 5, name: "Brightening Powders", price: "£28.00", img: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80", hoverImg: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60", }, { id: 6, name: "Wedding Cake Concealer", price: "£28.00", img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80", hoverImg: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=60", }, { id: 7, name: "Brontour Powders", price: "£28.00", img: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80", hoverImg: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=60", }, { id: 8, name: "Bridal Brush Collection 15 Set", price: "£200.00", img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80", hoverImg: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=60", },];
+const products = [
+  { id: 1, name: "Radiant Bride", price: "£28.00", img: "/Images/wed1.jpg", hoverImg: "/Images/wed2.jpg" },
+  { id: 2, name: "Bridal Makeup Artistry", price: "£32.00", img: "/Images/wed3.jpg", hoverImg: "/Images/wed4.jpg" },
+  { id: 3, name: "Elegant Dress Style", price: "£45.00", img: "/Images/wed5.jpg", hoverImg: "/Images/wed6.jpg" },
+  { id: 4, name: "Classic Bridal Look", price: "£38.00", img: "/Images/wed7.jpg", hoverImg: "/Images/wed8.jpg" },
+  { id: 5, name: "Modern Bride", price: "£29.00", img: "/Images/wed9.jpg", hoverImg: "/Images/wed10.jpg" },
+  { id: 6, name: "Bridal Accessories", price: "£19.00", img: "/Images/wed11.jpg", hoverImg: "/Images/wed12.jpg" },
+];
 
 const ProductGallery = () => {
     return (

@@ -2,7 +2,12 @@ import React from "react";
 import "../styles/EtherealShowcase.css";
 
 const EtherealShowcase = () => (
-  <section className="ethereal-hero">
+  <section
+    className="ethereal-hero"
+    style={{
+      background: "url('/Images/wed1.jpg') center right/cover no-repeat",
+    }}
+  >
     <div className="ethereal-hero-content">
       <h1 className="ethereal-hero-title">THE BRIDAL EXPERIENCE</h1>
       <p className="ethereal-hero-desc">

@@ -8,6 +8,7 @@ import BridalTestimonials from "./components/BridalTestimonials";
 import VipListSignup from "./components/VipListSignup";
 import ProductGallery from "./components/ProductGallery";
 import VideoGalleryNew from "./components/VideoGalleryNew";
+import ImageSection from "./components/ImageSection";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
   
   
       <VideoGalleryNew/>
+      <ImageSection />
       <BridalTestimonials/>
       <VipListSignup />
       <Footer />

@@ -9,8 +9,17 @@
 /* Section */
 .testimonials-section {
   padding: 80px 60px;
-  background: var(--bg);
   text-align: center;
+    padding: 80px 20px;
+  margin-top: 40px;
+  background: var(--bg);
+
+  overflow-x: hidden;   /* ✅ only prevent horizontal scroll */
+  overflow-y: visible;  /* ✅ allow vertical content */
+}
+.testimonials-container {
+  max-width: 1100px;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
@@ -82,12 +91,12 @@
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
-  top: 50%;
+  top: 38%;
   transform: translateY(-50%);
   z-index: 10;
-
-  width: 40px;
-  height: 40px;
+  margin: 0.8rem;
+  width: 20px;
+  height: 20px;
 
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.6);
@@ -108,7 +117,13 @@
   font-size: 18px;
   font-weight: bold;
 }
+.swiper-button-prev {
+  left: 5px;
+}
 
+.swiper-button-next {
+  right: 5px;
+}
 /* Hover */
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
@@ -160,18 +175,26 @@
   }
 
   .swiper-button-prev {
-    left: 5px;
+    left: 25px;
   }
 
   .swiper-button-next {
-    right: 5px;
+    right: 25px;
   }
 }
 
 /* Optional: hide arrows on very small screens */
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
+  }
+    .testimonial-card {
+    padding: 18px 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    max-width: 70vw;
+    min-width: 80vw;
+    margin: 0 auto;
   }
 }

@@ -22,7 +22,16 @@ const VipListSignup = () => {
   };
 
   return (
-    <section className="vip-list-section">
+    <section
+      className="vip-list-section"
+      style={{
+        backgroundImage: "url('/Images/wed13.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        position: 'relative',
+      }}
+    >
       <div className="vip-list-container">
         <div className="vip-list-content">
           <h2 className="vip-list-title">JOIN THE VIP LIST</h2>
