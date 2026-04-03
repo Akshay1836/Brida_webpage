@@ -95,10 +95,11 @@ function MasterclassPage() {
 
   useEffect(() => {
     const track = galleryTrackRef.current;
+    const autoScroll = autoScrollRef.current;
     if (!track) return undefined;
 
     const tick = () => {
-      if (!autoScrollRef.current.isPaused && !dragStateRef.current.isDragging) {
+      if (!autoScroll.isPaused && !dragStateRef.current.isDragging) {
         track.scrollLeft += 0.45;
 
         if (track.scrollLeft >= track.scrollWidth / 2) {
@@ -106,14 +107,14 @@ function MasterclassPage() {
         }
       }
 
-      autoScrollRef.current.frameId = window.requestAnimationFrame(tick);
+      autoScroll.frameId = window.requestAnimationFrame(tick);
     };
 
-    autoScrollRef.current.frameId = window.requestAnimationFrame(tick);
+    autoScroll.frameId = window.requestAnimationFrame(tick);
 
     return () => {
-      if (autoScrollRef.current.frameId) {
-        window.cancelAnimationFrame(autoScrollRef.current.frameId);
+      if (autoScroll.frameId) {
+        window.cancelAnimationFrame(autoScroll.frameId);
       }
     };
   }, []);
