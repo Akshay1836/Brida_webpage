@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "./Hero";
+import OurBrides from "./OurBrides";
 import BridalExperience from "./BridalExperience";
 import ImageSection from "./ImageSection";
 import ProductGallery from "./ProductGallery";
@@ -11,12 +12,15 @@ function HomePage() {
   return (
     <main id="home">
       <Hero />
+      
        <ImageSection />
       <BridalExperience />
      
       <ProductGallery />
       <BridalTestimonials />
+      <OurBrides />
       <VideoGalleryNew />
+      
       <VipListSignup />
     </main>
   );
