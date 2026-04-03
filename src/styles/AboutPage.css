@@ -632,3 +632,26 @@
 
   .bp-hide { display: none; }
 }
+
+@media (max-width: 640px) {
+  .about-page {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .about-hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .about-intro,
+  .about-editorial,
+  .about-story,
+  .about-signature,
+  .about-philosophy,
+  .about-copy-wrap,
+  .about-editorial-copy {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
