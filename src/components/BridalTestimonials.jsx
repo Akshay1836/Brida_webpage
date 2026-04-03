@@ -37,6 +37,9 @@ const BridalTestimonials = () => {
           modules={[Navigation, Pagination]}
           spaceBetween={30}
           slidesPerView={1}
+          speed={700}
+          grabCursor={true}
+          watchOverflow={true}
           navigation={{
             nextEl: ".testimonial-arrow-next",
             prevEl: ".testimonial-arrow-prev"
@@ -45,9 +48,11 @@ const BridalTestimonials = () => {
             clickable: true,
             el: ".bridal-testimonials-pagination",
             bulletClass: "testimonial-bullet",
-            bulletActiveClass: "testimonial-bullet-active"
+            bulletActiveClass: "testimonial-bullet-active",
+            dynamicBullets: true
           }}
           breakpoints={{
+            0: { slidesPerView: 1, spaceBetween: 14 },
             640: { slidesPerView: 1, spaceBetween: 20 },
             1024: { slidesPerView: 3, spaceBetween: 30 }
           }}
@@ -65,17 +70,11 @@ const BridalTestimonials = () => {
         </Swiper>
 
         <button className="testimonial-arrow testimonial-arrow-prev" aria-label="Previous testimonial">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="16" cy="16" r="15" stroke="#2a1207" strokeWidth="2" fill="#fff"/>
-            <path d="M19.5 10L13.5 16L19.5 22" stroke="#2a1207" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
+          <span aria-hidden="true">&#8592;</span>
         </button>
 
         <button className="testimonial-arrow testimonial-arrow-next" aria-label="Next testimonial">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="16" cy="16" r="15" stroke="#2a1207" strokeWidth="2" fill="#fff"/>
-            <path d="M12.5 10L18.5 16L12.5 22" stroke="#2a1207" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
+          <span aria-hidden="true">&#8594;</span>
         </button>
 
         <div className="bridal-testimonials-pagination"></div>

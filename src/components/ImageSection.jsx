@@ -47,11 +47,22 @@ function ImageSection({
           slidesPerView={1}
           centeredSlides={true}
           spaceBetween={16}
-          pagination={{ clickable: true }}
-          navigation
+          speed={700}
+          grabCursor={true}
+          watchOverflow={true}
+          pagination={{ clickable: true, dynamicBullets: true }}
+          navigation={{
+            prevEl: '.gallery-stack-arrow-prev',
+            nextEl: '.gallery-stack-arrow-next',
+          }}
           loop={images.length > 2}
           rewind={false}
           breakpoints={{
+            0: {
+              slidesPerView: 1,
+              centeredSlides: true,
+              spaceBetween: 12,
+            },
             700: {
               slidesPerView: 'auto',
               centeredSlides: false,
@@ -70,6 +81,13 @@ function ImageSection({
             </SwiperSlide>
           ))}
         </Swiper>
+
+        <button className="gallery-stack-arrow gallery-stack-arrow-prev" aria-label="Previous image">
+          <span aria-hidden="true">&#8592;</span>
+        </button>
+        <button className="gallery-stack-arrow gallery-stack-arrow-next" aria-label="Next image">
+          <span aria-hidden="true">&#8594;</span>
+        </button>
       </div>
     </section>
   )

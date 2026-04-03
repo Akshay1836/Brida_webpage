@@ -39,22 +39,29 @@ const Testimonials = () => {
 
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
+          className="testimonials-swiper"
           spaceBetween={20}
           slidesPerView={1}
           centeredSlides={false}
+          speed={700}
           loop={true}
-          navigation={true}
+          grabCursor={true}
+          watchOverflow={true}
+          navigation={{
+            prevEl: ".testimonials-arrow-prev",
+            nextEl: ".testimonials-arrow-next",
+          }}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
           }}
-          pagination={{ clickable: true }}
+          pagination={{ clickable: true, dynamicBullets: true }}
           breakpoints={{
-            0: { slidesPerView: 1 },
-            600: { slidesPerView: 1.2 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 2.5 },
-            1200: { slidesPerView: 3 },
+            0: { slidesPerView: 1, spaceBetween: 14 },
+            600: { slidesPerView: 1.2, spaceBetween: 16 },
+            768: { slidesPerView: 2, spaceBetween: 18 },
+            1024: { slidesPerView: 2.4, spaceBetween: 20 },
+            1200: { slidesPerView: 3, spaceBetween: 20 },
           }}
         >
           {testimonials.map((t, i) => (
@@ -66,6 +73,13 @@ const Testimonials = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        <button className="testimonials-arrow testimonials-arrow-prev" aria-label="Previous testimonial">
+          <span aria-hidden="true">&#8592;</span>
+        </button>
+        <button className="testimonials-arrow testimonials-arrow-next" aria-label="Next testimonial">
+          <span aria-hidden="true">&#8594;</span>
+        </button>
       </div>
     </section>
   );

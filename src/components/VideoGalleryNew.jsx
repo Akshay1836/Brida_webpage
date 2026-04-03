@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "../styles/VideoGalleyNew.css";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/pagination";
 
 const videos = [
   {
@@ -108,15 +109,23 @@ const VideoGalleryNew = () => {
 
       {/* SWIPER */}
       <Swiper
-        modules={[Navigation]}
-        navigation={true}
-        
+        modules={[Navigation, Pagination]}
+        className="video-gallery-swiper"
+        navigation={{
+          prevEl: ".video-gallery-arrow-prev",
+          nextEl: ".video-gallery-arrow-next",
+        }}
+        pagination={{ clickable: true, dynamicBullets: true }}
+        speed={700}
+        grabCursor={true}
+        watchOverflow={true}
         spaceBetween={20}
         slidesPerView={1.2}
         breakpoints={{
-          600: { slidesPerView: 2 },
-          900: { slidesPerView: 3 },
-          1200: { slidesPerView: 5 },
+          0: { slidesPerView: 1.1, spaceBetween: 14 },
+          600: { slidesPerView: 2, spaceBetween: 16 },
+          900: { slidesPerView: 3, spaceBetween: 18 },
+          1200: { slidesPerView: 5, spaceBetween: 20 },
         }}
       >
         {videos.map((item, index) => (
@@ -143,6 +152,13 @@ const VideoGalleryNew = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <button className="video-gallery-arrow video-gallery-arrow-prev" aria-label="Previous video">
+        <span aria-hidden="true">&#8592;</span>
+      </button>
+      <button className="video-gallery-arrow video-gallery-arrow-next" aria-label="Next video">
+        <span aria-hidden="true">&#8594;</span>
+      </button>
 
       {/* MODAL */}
       {activeIndex !== null && (

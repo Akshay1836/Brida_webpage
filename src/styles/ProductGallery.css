@@ -18,6 +18,7 @@ body {
   padding: 50px 80px;
   text-align: center;
   overflow: hidden;
+  position: relative;
 }
 
 /* ================= HEADER ================= */
@@ -53,11 +54,11 @@ body {
 }
 
 /* ================= SWIPER ================= */
-.swiper {
+.product-gallery-swiper {
   padding-bottom: 30px;
 }
 
-.swiper-slide {
+.product-gallery-swiper .swiper-slide {
   display: flex;
 }
 
@@ -154,18 +155,51 @@ body {
   background: var(--latte);
 }
 /* Navigation arrows */
-.swiper-button-next,
-.swiper-button-prev {
+.gallery-container .product-gallery-arrow {
+  position: absolute;
+  top: 56%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(74, 87, 64, 0.45);
+  background: rgba(255, 255, 255, 0.95);
   color: var(--olive);
+  box-shadow: 0 10px 20px rgba(42, 18, 7, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 15;
+  transition: transform 220ms ease, background 220ms ease, color 220ms ease;
+}
+
+.gallery-container .product-gallery-arrow span {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.gallery-container .product-gallery-arrow:hover {
+  transform: translateY(-50%) scale(1.08);
+  background: var(--olive);
+  color: #fff;
+}
+
+.gallery-container .product-gallery-arrow-prev {
+  left: 8px;
+}
+
+.gallery-container .product-gallery-arrow-next {
+  right: 8px;
 }
 
 /* Pagination dots */
-.swiper-pagination-bullet {
+.product-gallery-swiper .swiper-pagination-bullet {
   background: var(--olive);
   opacity: 0.5;
 }
 
-.swiper-pagination-bullet-active {
+.product-gallery-swiper .swiper-pagination-bullet-active {
   opacity: 1;
 }
 /* ================= RESPONSIVE ================= */
@@ -178,6 +212,26 @@ body {
 @media (max-width: 600px) {
   .gallery-container {
     padding: 30px 15px;
+  }
+
+  .gallery-container .product-gallery-arrow {
+    width: 40px;
+    height: 40px;
+    top: auto;
+    bottom: 88px;
+    transform: none;
+  }
+
+  .gallery-container .product-gallery-arrow:hover {
+    transform: scale(1.05);
+  }
+
+  .gallery-container .product-gallery-arrow-prev {
+    left: calc(50% - 56px);
+  }
+
+  .gallery-container .product-gallery-arrow-next {
+    right: calc(50% - 56px);
   }
 
   .image-wrapper {

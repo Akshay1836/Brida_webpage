@@ -43,13 +43,14 @@
   padding: 1rem 0;
 }
 
-.swiper-wrapper {
+.bridal-testimonials-swiper .swiper-wrapper {
   padding: 0;
 }
 
-.swiper-slide {
+.bridal-testimonials-swiper .swiper-slide {
   display: flex;
   align-items: stretch;
+  justify-content: center;
 }
 
 .testimonial-cards {
@@ -166,9 +167,9 @@
   right: -70px;
 }
 
-.testimonial-arrow svg {
-  display: block;
-  stroke: currentColor;
+.testimonial-arrow span {
+  font-size: 1.3rem;
+  line-height: 1;
 }
 
 .testimonial-arrow:hover {
@@ -221,15 +222,15 @@
 
 @media (max-width: 768px) {
   .bridal-testimonials-swiper-wrapper {
-    padding: 0 1rem;
+    padding: 0 3.2rem;
   }
   
   .testimonial-arrow-prev {
-    left: -30px;
+    left: 8px;
   }
   
   .testimonial-arrow-next {
-    right: -30px;
+    right: 8px;
   }
   
   .testimonial-card {
@@ -243,24 +244,27 @@
 
 @media (max-width: 640px) {
   .bridal-testimonials-swiper-wrapper {
-    padding: 0 0.5rem;
+    padding: 0 2.8rem;
   }
   
   .testimonial-arrow {
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   
   .testimonial-arrow-prev {
-    left: -20px;
+    left: 4px;
   }
   
   .testimonial-arrow-next {
-    right: -20px;
+    right: 4px;
   }
   
   .testimonial-card {
-    min-width: 100%;
+    width: 100%;
+    min-width: 0;
     max-width: 100%;
     padding: 1.2rem 1rem 1rem 1rem;
   }
@@ -288,18 +292,5 @@
     margin-top: 1.5rem;
   }
 }
-  .testimonial-title {
-    font-size: 1rem;
-  }
-  .testimonial-text {
-    font-size: 0.9rem;
-  }
-  .testimonial-author {
-    font-size: 0.85rem;
-  }
-  .testimonial-arrow {
-    width: 45px;
-    height: 45px;
-  }
 
 

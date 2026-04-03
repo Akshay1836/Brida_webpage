@@ -63,11 +63,14 @@ const VelvetMediaGallery = () => {
           modules={[Navigation, Pagination]}
           spaceBetween={20}
           slidesPerView={4}
+          speed={700}
+          grabCursor={true}
+          watchOverflow={true}
           navigation={{
             nextEl: ".velvet-swiper-button-next",
             prevEl: ".velvet-swiper-button-prev"
           }}
-          pagination={{ clickable: true, el: ".velvet-swiper-pagination" }}
+          pagination={{ clickable: true, dynamicBullets: true, el: ".velvet-swiper-pagination" }}
           breakpoints={{
             320: { slidesPerView: 1, spaceBetween: 15 },
             640: { slidesPerView: 2, spaceBetween: 15 },
@@ -101,10 +104,10 @@ const VelvetMediaGallery = () => {
 
         {/* Custom Navigation Buttons */}
         <button className="velvet-swiper-button-prev" aria-label="Previous slide">
-          ‹
+          <span aria-hidden="true">&#8592;</span>
         </button>
         <button className="velvet-swiper-button-next" aria-label="Next slide">
-          ›
+          <span aria-hidden="true">&#8594;</span>
         </button>
 
         {/* Pagination Dots */}

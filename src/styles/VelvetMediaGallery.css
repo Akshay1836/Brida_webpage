@@ -87,12 +87,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
   cursor: pointer;
   transition: all 0.3s ease;
   padding: 0;
   margin: 0;
   outline: none;
+}
+
+.velvet-swiper-button-prev span,
+.velvet-swiper-button-next span {
+  font-size: 1.3rem;
+  line-height: 1;
 }
 
 .velvet-swiper-button-prev:hover,
@@ -516,6 +521,28 @@
 
   .velvet-media-thumb {
     height: 280px;
+  }
+
+  .velvet-swiper-button-prev,
+  .velvet-swiper-button-next {
+    width: 40px;
+    height: 40px;
+    top: auto;
+    bottom: 8px;
+    transform: none;
+  }
+
+  .velvet-swiper-button-prev:hover,
+  .velvet-swiper-button-next:hover {
+    transform: scale(1.05);
+  }
+
+  .velvet-swiper-button-prev {
+    left: calc(50% - 56px);
+  }
+
+  .velvet-swiper-button-next {
+    right: calc(50% - 56px);
   }
 
   .velvet-media-type {

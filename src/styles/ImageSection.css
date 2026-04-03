@@ -126,6 +126,44 @@
   padding: 1px;
 }
 
+.gallery-stack-swiper-wrap .gallery-stack-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(74, 87, 64, 0.45);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-olive);
+  box-shadow: 0 8px 20px rgba(42, 18, 7, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 18;
+  transition: transform 220ms ease, background 220ms ease, color 220ms ease;
+}
+
+.gallery-stack-swiper-wrap .gallery-stack-arrow span {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.gallery-stack-swiper-wrap .gallery-stack-arrow:hover {
+  transform: translateY(-50%) scale(1.08);
+  background: var(--color-olive);
+  color: #fff;
+}
+
+.gallery-stack-swiper-wrap .gallery-stack-arrow-prev {
+  left: 24px;
+}
+
+.gallery-stack-swiper-wrap .gallery-stack-arrow-next {
+  right: 24px;
+}
+
 /* Fix: Swiper global rule (height:100vh) is applied project-wide. Override it here so
   this gallery sizes to its content instead of using the full viewport height. */
 .gallery-stack-swiper {
@@ -246,6 +284,22 @@
   }
   /* give extra breathing room on mobile where content stacks */
   .gallery-stack-swiper-wrap { margin-top: 24px; padding: 14px 16px 36px; }
+  .gallery-stack-swiper-wrap .gallery-stack-arrow {
+    width: 40px;
+    height: 40px;
+    top: auto;
+    bottom: 4px;
+    transform: none;
+  }
+  .gallery-stack-swiper-wrap .gallery-stack-arrow:hover {
+    transform: scale(1.05);
+  }
+  .gallery-stack-swiper-wrap .gallery-stack-arrow-prev {
+    left: calc(50% - 52px);
+  }
+  .gallery-stack-swiper-wrap .gallery-stack-arrow-next {
+    right: calc(50% - 52px);
+  }
 }
 
 /* centered large caption overlay - hidden by default, reveal on hover/focus */

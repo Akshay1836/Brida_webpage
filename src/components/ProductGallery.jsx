@@ -30,23 +30,30 @@ const ProductGallery = () => {
 
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
+                className="product-gallery-swiper"
                 spaceBetween={25}
                 slidesPerView={1.2}
                 grabCursor={true}
+                speed={700}
                 loop={true}
+                watchOverflow={true}
 
                 autoplay={{
                     delay: 3000,
                     disableOnInteraction: false,
                 }}
 
-                pagination={{ clickable: true }}
-                navigation={true}
+                pagination={{ clickable: true, dynamicBullets: true }}
+                navigation={{
+                    prevEl: ".product-gallery-arrow-prev",
+                    nextEl: ".product-gallery-arrow-next",
+                }}
 
                 breakpoints={{
-                    600: { slidesPerView: 2 },
-                    900: { slidesPerView: 3 },
-                    1200: { slidesPerView: 4 },
+                    0: { slidesPerView: 1.1, spaceBetween: 14 },
+                    600: { slidesPerView: 2, spaceBetween: 18 },
+                    900: { slidesPerView: 3, spaceBetween: 22 },
+                    1200: { slidesPerView: 4, spaceBetween: 25 },
                 }}
             >
                 {products.map((item) => (
@@ -63,6 +70,13 @@ const ProductGallery = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+
+            <button className="product-gallery-arrow product-gallery-arrow-prev" aria-label="Previous product">
+                <span aria-hidden="true">&#8592;</span>
+            </button>
+            <button className="product-gallery-arrow product-gallery-arrow-next" aria-label="Next product">
+                <span aria-hidden="true">&#8594;</span>
+            </button>
 
             <button className="view-btn">View all</button>
         </div>
