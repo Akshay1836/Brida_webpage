@@ -4,24 +4,24 @@ import "../styles/MasterclassPage.css";
 
 const masterclassImages = [
   "/Images/wed1.jpg",
-  "/Images/wed2.jpg",
-  "/Images/wed3.jpg",
-  "/Images/wed4.jpg",
-  "/Images/wed5.jpg",
-  "/Images/wed6.jpg",
-  "/Images/wed7.jpg",
-  "/Images/wed8.jpg",
-  "/Images/wed9.jpg",
-  "/Images/wed10.jpg",
-  "/Images/wed11.jpg",
-  "/Images/wed12.jpg",
-  "/Images/wed13.jpg",
-  "/Images/wed14.jpg",
-  "/Images/wed15.jpg",
-  "/Images/wed16.jpg",
+  "/Images/wed22.jpg",
+  "/Images/wed23.jpg",
+  "/Images/wed24.jpg",
+  "/Images/wed25.jpg",
+  "/Images/wed26.jpg",
+  "/Images/wed27.jpg",
+  "/Images/wed28.jpg",
+  "/Images/wed29.jpg",
+  "/Images/wed30.jpg",
+  "/Images/wed31.jpg",
+  "/Images/wed32.jpg",
+  "/Images/wed33.jpg",
+  "/Images/wed34.jpg",
+  "/Images/wed35.jpg",
+  "/Images/wed36.jpg",
 ];
 
-const visualStack = ["/Images/wed12.jpg", "/Images/wed9.jpg", "/Images/wed15.jpg"];
+const visualStack = ["/Images/wed37.jpg", "/Images/wed38.jpg", "/Images/wed39.jpg"];
 
 const modules = [
   {
@@ -158,7 +158,7 @@ function MasterclassPage() {
 
   return (
     <main className="masterclass-page" id="masterclass">
-      <div className="masterclass-bg-image" aria-hidden="true" style={{ backgroundImage: "url('/Images/wed10.jpg')" }} />
+      <div className="masterclass-bg-image" aria-hidden="true" style={{ backgroundImage: "url('/Images/wed1.jpg')" }} />
 
       <motion.section
         className="masterclass-gallery"
@@ -243,7 +243,7 @@ function MasterclassPage() {
 
         <motion.div className="masterclass-hero-right" variants={stagger}>
           <motion.article className="masterclass-hero-visual" variants={fadeUp}>
-            <img src="/Images/wed13.jpg" alt="Masterclass signature bridal look" loading="lazy" />
+            <img src="/Images/wed41.jpg" alt="Masterclass signature bridal look" loading="lazy" />
             <div className="masterclass-visual-overlay">
               <p>Masterclass Edit</p>
               <h3>Luxury Bridal Finish</h3>

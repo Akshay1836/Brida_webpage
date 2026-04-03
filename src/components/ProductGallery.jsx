@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 const products = [
   { id: 1, name: "Radiant Bride", price: "£28.00", img: "/Images/wed1.jpg", hoverImg: "/Images/wed2.jpg" },
   { id: 2, name: "Bridal Makeup Artistry", price: "£32.00", img: "/Images/wed3.jpg", hoverImg: "/Images/wed4.jpg" },
-  { id: 3, name: "Elegant Dress Style", price: "£45.00", img: "/Images/wed5.jpg", hoverImg: "/Images/wed6.jpg" },
+  { id: 3, name: "Elegant Dress Style", price: "£45.00", img: "/Images/wed26.jpg", hoverImg: "/Images/wed6.jpg" },
   { id: 4, name: "Classic Bridal Look", price: "£38.00", img: "/Images/wed7.jpg", hoverImg: "/Images/wed8.jpg" },
   { id: 5, name: "Modern Bride", price: "£29.00", img: "/Images/wed9.jpg", hoverImg: "/Images/wed10.jpg" },
   { id: 6, name: "Bridal Accessories", price: "£19.00", img: "/Images/wed11.jpg", hoverImg: "/Images/wed12.jpg" },

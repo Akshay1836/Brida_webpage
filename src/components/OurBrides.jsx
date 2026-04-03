@@ -10,12 +10,12 @@ const brides = [
   },
   {
     name: "Sarah",
-    image: "/Images/wed2.jpg",
+    image: "/Images/wed4.jpg",
     alt: "Bride Sarah with groom in garden setting",
   },
   {
     name: "Gabriella",
-    image: "/Images/wed3.jpg",
+    image: "/Images/wed12.jpg",
     alt: "Bride Gabriella portrait in nature",
   },
 ];

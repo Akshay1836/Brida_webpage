@@ -11,7 +11,7 @@ const videos = [
     id: 1,
     title: "Bridal Highlights 2024",
     thumbnail:
-      "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
+      "/Images/wed31.jpg",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     duration: "3:45",
     views: 1240,
@@ -21,7 +21,7 @@ const videos = [
     id: 2,
     title: "Wedding Ceremony",
     thumbnail:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
+      "/Images/wed32.jpg",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     duration: "8:15",
     views: 2340,
@@ -31,7 +31,7 @@ const videos = [
     id: 3,
     title: "Reception Moments",
     thumbnail:
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+      "/Images/wed33.jpg",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     duration: "4:50",
     views: 1680,
@@ -41,7 +41,7 @@ const videos = [
     id: 4,
     title: "Bridal Preparations",
     thumbnail:
-      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80",
+      "/Images/wed34.jpg",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     duration: "6:30",
     views: 945,
@@ -51,7 +51,7 @@ const videos = [
     id: 5,
     title: "Cinematic Highlights",
     thumbnail:
-      "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=400&q=80",
+      "/Images/wed35.jpg",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     duration: "7:10",
     views: 3210,

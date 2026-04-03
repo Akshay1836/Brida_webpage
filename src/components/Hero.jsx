@@ -2,15 +2,22 @@ import React from "react";
 import "../styles/Hero.css";
 
 const Hero = () => {
+  const heroStyle = {
+    backgroundImage: 'url("/Images/wed30.jpg")',
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  };
+
   return (
-    <section className="hero">
+    <section className="hero" style={heroStyle}>
       <div className="hero-overlay"></div>
 
       <div className="hero-inner">
         <p className="hero-tag">Luxury Bridal Beauty</p>
 
         <h1 className="hero-heading">
-          Crafted for Brides, <br /> Perfected for Artists
+          Crafted for Brides <br /> Perfected for Artists
         </h1>
 
         <p className="hero-subtext">

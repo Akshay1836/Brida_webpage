@@ -39,49 +39,49 @@ const accordionItems = [
 ];
 
 const galleryImages = [
-  "/Images/wed1.jpg",
-  "/Images/wed2.jpg",
-  "/Images/wed3.jpg",
-  "/Images/wed4.jpg",
-  "/Images/wed5.jpg",
-  "/Images/wed6.jpg",
-  "/Images/wed7.jpg",
-  "/Images/wed8.jpg",
+  "/Images/wed21.jpg",
+  "/Images/wed22.jpg",
+  "/Images/wed23.jpg",
+  "/Images/wed24.jpg",
+  "/Images/wed25.jpg",
+  "/Images/wed26.jpg",
+  "/Images/wed27.jpg",
+  "/Images/wed28.jpg",
 ];
 
 // Replace ytId with your actual YouTube video IDs
 const videoItems = [
   {
     ytId: "YOUR_VIDEO_ID_1",
-    thumb: "/Images/wed9.jpg",
+    thumb: "/Images/wed29.jpg",
     title: "Bridal Reception - Full Look",
     caption: "A timeless bridal glam with luminous skin and soft sculpting.",
     products: ["NARS: Fiji mixed Punjab", "TANJI Concealer: Opulent mixed Cashmere", "Glow: Silk"],
   },
   {
     ytId: "YOUR_VIDEO_ID_2",
-    thumb: "/Images/wed10.jpg",
+    thumb: "/Images/wed30.jpg",
     title: "Behind The Veil - Nikah Edition",
     caption: "Fresh nikah-ready skin prep and seamless camera-safe makeup.",
     products: ["Brightening Powder: Syrup, Pearl & Oyster", "Bronzer: Amber", "Lashes: Light Bloom"],
   },
   {
     ytId: "YOUR_VIDEO_ID_3",
-    thumb: "/Images/wed11.jpg",
+    thumb: "/Images/wed31.jpg",
     title: "Signature Glow - Editorial Shoot",
     caption: "Our signature elevated glow adapted for editorial lighting.",
     products: ["Blush: Sorbet", "Gloss: Chinchilla", "Tools: Bridal Brush Collection"],
   },
   {
     ytId: "YOUR_VIDEO_ID_4",
-    thumb: "/Images/wed12.jpg",
+    thumb: "/Images/wed32.jpg",
     title: "Reception Glam - Soft Sculpt",
     caption: "A polished reception look with lifted eyes and satin-skin finish.",
     products: ["Base: Airbrush finish", "Contour: Amber", "Lips: Rose Nude"],
   },
   {
     ytId: "YOUR_VIDEO_ID_5",
-    thumb: "/Images/wed12.jpg",
+    thumb: "/Images/wed33.jpg",
     title: "Bridal Trial - Timeless Nude",
     caption: "Trial session focused on balance, longevity, and camera-ready tones.",
     products: ["Primer: Longwear veil", "Powder: Pearl set", "Lashes: Soft wispy"],
@@ -138,7 +138,7 @@ function BridalServicePage() {
         initial="hidden"
         animate="show"
       >
-        <div className="bridal-service-hero__image" style={{ backgroundImage: "url('/Images/wed16.jpg')" }} aria-hidden="true" />
+        <div className="bridal-service-hero__image" style={{ backgroundImage: "url('/Images/wed41.jpg')" }} aria-hidden="true" />
         <div className="bridal-service-hero__veil" aria-hidden="true" />
 
         <motion.article className="bridal-service-hero__content" variants={fadeUp}>
@@ -212,10 +212,10 @@ function BridalServicePage() {
 
         <motion.aside className="bridal-service-side" variants={fadeUp}>
           <article className="bridal-service-side__image bridal-service-side__image--one">
-            <img src="/Images/wed13.jpg" alt="Bridal editorial close-up" loading="lazy" />
+            <img src="/Images/wed25.jpg" alt="Bridal editorial close-up" loading="lazy" />
           </article>
           <article className="bridal-service-side__image bridal-service-side__image--two">
-            <img src="/Images/wed15.jpg" alt="Bridal reception makeup look" loading="lazy" />
+            <img src="/Images/wed36.jpg" alt="Bridal reception makeup look" loading="lazy" />
           </article>
         </motion.aside>
       </motion.section>

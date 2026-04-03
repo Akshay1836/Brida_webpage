@@ -18,38 +18,38 @@ const stagger = {
 };
 
 const topCollage = [
-  "/Images/wed1.jpg",
-  "/Images/wed2.jpg",
-  "/Images/wed3.jpg",
-  "/Images/wed4.jpg",
-  "/Images/wed5.jpg",
-  "/Images/wed6.jpg",
-  "/Images/wed7.jpg",
+  "/Images/wed21.jpg",
+  "/Images/wed22.jpg",
+  "/Images/wed23.jpg",
+  "/Images/wed24.jpg",
+  "/Images/wed25.jpg",
+  "/Images/wed26.jpg",
+  "/Images/wed27.jpg",
 ];
 
 const movingCollage = [...topCollage, ...topCollage];
 
 const editorialStrip = [
-  "/Images/wed8.jpg",
-  "/Images/wed9.jpg",
-  "/Images/wed10.jpg",
-  "/Images/wed11.jpg",
-  "/Images/wed12.jpg",
+  "/Images/wed28.jpg",
+  "/Images/wed29.jpg",
+  "/Images/wed30.jpg",
+  "/Images/wed31.jpg",
+  "/Images/wed32.jpg",
 ];
 
 const weddingStory = [
-  "/Images/wed13.jpg",
-  "/Images/wed14.jpg",
-  "/Images/wed15.jpg",
-  "/Images/wed16.jpg",
-  "/Images/wed1.jpg",
-  "/Images/wed2.jpg",
-  "/Images/wed3.jpg",
-  "/Images/wed4.jpg",
-  "/Images/wed5.jpg",
-  "/Images/wed6.jpg",
-  "/Images/wed7.jpg",
-  "/Images/wed8.jpg",
+  "/Images/wed33.jpg",
+  "/Images/wed34.jpg",
+  "/Images/wed35.jpg",
+  "/Images/wed36.jpg",
+  "/Images/wed37.jpg",
+  "/Images/wed38.jpg",
+  "/Images/wed39.jpg",
+  "/Images/wed40.jpg",
+  "/Images/wed41.jpg",
+  "/Images/wed42.jpg",
+  "/Images/wed43.jpg",
+  "/Images/wed44.jpg",
 ];
 
 const brandHighlights = [
