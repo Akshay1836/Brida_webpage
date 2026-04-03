@@ -21,6 +21,11 @@
   overflow: hidden;
 }
 
+.contact-section,
+.contact-section * {
+  box-sizing: border-box;
+}
+
 .contact-section__bg-shape {
   position: absolute;
   width: 420px;

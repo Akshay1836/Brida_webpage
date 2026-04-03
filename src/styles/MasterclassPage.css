@@ -6,6 +6,11 @@
   padding: 1.4rem 1.2rem 4.4rem;
 }
 
+.masterclass-page,
+.masterclass-page * {
+  box-sizing: border-box;
+}
+
 .masterclass-bg-image {
   position: absolute;
   inset: 0;
@@ -403,6 +408,7 @@
 
 .masterclass-contact-form input,
 .masterclass-contact-form textarea {
+  width: 100%;
   border: 1px solid rgba(42, 18, 7, 0.2);
   border-radius: 12px;
   padding: 0.75rem 0.85rem;
