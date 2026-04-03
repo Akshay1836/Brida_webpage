@@ -25,6 +25,12 @@ const InstagramIcon = () => (
   </svg>
 );
 
+const announcementItems = [
+  "Luxury Bridal Beauty",
+  "London Based Bridal Artistry",
+  "Editorial, Bridal And Masterclass Experiences",
+];
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleLinkClick = () => setMenuOpen(false);
@@ -33,10 +39,18 @@ const Navbar = () => {
     <>
       {/* Announcement */}
       <div className="announcement-bar">
-        <div className="announcement-bar__inner">
-          <span>Luxury Bridal Beauty</span>
-          <span>London Based Bridal Artistry</span>
-          <span>Editorial, Bridal And Masterclass Experiences</span>
+        <div className="announcement-bar__marquee">
+          {[0, 1].map((copyIndex) => (
+            <div
+              className="announcement-bar__inner"
+              key={`announcement-copy-${copyIndex}`}
+              aria-hidden={copyIndex === 1}
+            >
+              {announcementItems.map((item) => (
+                <span key={`${copyIndex}-${item}`}>{item}</span>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
 

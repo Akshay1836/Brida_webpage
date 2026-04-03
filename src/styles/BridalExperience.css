@@ -2,7 +2,7 @@
 .bridal-experience-section {
   position: relative;
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   background:
     linear-gradient(90deg, rgba(22, 13, 10, 0.78) 0%, rgba(22, 13, 10, 0.48) 38%, rgba(22, 13, 10, 0.12) 66%),
     url("https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1500&q=80") center center/cover no-repeat,

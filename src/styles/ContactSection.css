@@ -3,7 +3,7 @@
   --contact-olive: #4a5740;
   --contact-chocolate: #6f5244;
   --contact-latte: #2a1207;
-  --contact-bg: #f6f4f1;
+  --contact-bg: #dde8d7;
   --contact-border: rgba(111, 82, 68, 0.25);
   --contact-shadow-soft: 0 20px 45px rgba(42, 18, 7, 0.12);
   --contact-shadow-hover: 0 24px 54px rgba(42, 18, 7, 0.2);
@@ -15,9 +15,9 @@
   min-height: calc(100vh - 120px);
   padding: 92px 20px;
   background:
-    radial-gradient(circle at 12% 8%, rgba(178, 140, 104, 0.2), transparent 46%),
-    radial-gradient(circle at 88% 88%, rgba(74, 87, 64, 0.16), transparent 52%),
-    linear-gradient(165deg, rgba(246, 244, 241, 0.97), rgba(246, 244, 241, 1));
+    radial-gradient(circle at 8% 6%, rgba(255, 255, 255, 0.45), transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(74, 87, 64, 0.12), transparent 50%),
+    #dde8d7;
   overflow: hidden;
 }
 

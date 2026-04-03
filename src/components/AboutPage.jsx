@@ -1,10 +1,21 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../styles/AboutPage.css";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.72, ease: "easeOut" } },
+};
+
+const stagger = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.13 } },
+};
 
 const topCollage = [
   "/Images/wed1.jpg",
@@ -72,6 +83,29 @@ const studioNotes = [
 function AboutPage() {
   return (
     <main className="about-page" id="about">
+
+      {/* ── Hero ── */}
+      <section className="about-hero">
+        <motion.div
+          className="about-hero-inner"
+          variants={stagger}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.p className="about-hero-eyebrow" variants={fadeUp}>
+            Beauty Artistry · London
+          </motion.p>
+          <motion.h1 variants={fadeUp}>
+            The Vision Behind<br /><em>By Tanji</em>
+          </motion.h1>
+          <motion.p className="about-hero-sub" variants={fadeUp}>
+            A decade of refined craft, published artistry, and beauty<br className="bp-hide" />
+            designed to feel as beautiful as it looks.
+          </motion.p>
+        </motion.div>
+      </section>
+
+      {/* ── Intro marquee + copy + stats ── */}
       <section className="about-intro">
         <div className="about-intro-marquee">
           <div className="about-intro-track">
@@ -83,25 +117,49 @@ function AboutPage() {
           </div>
         </div>
 
-        <div className="about-copy-wrap">
-          <p>
+        <motion.div
+          className="about-copy-wrap"
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.4 }}
+        >
+          <motion.p variants={fadeUp}>
             Tanjia Sayed is a digital luxury content creator, published professional bridal
             makeup artist, and founder of By Tanji Beauty, based in London. Her demographic
             comprises both an international bridal clientele and a range of commercial brands.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
-        <div className="about-highlights-grid">
+        <motion.div
+          className="about-highlights-grid"
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+        >
           {brandHighlights.map((item) => (
-            <article className="about-highlight-card" key={item.label}>
+            <motion.article className="about-highlight-card" key={item.label} variants={fadeUp}>
               <strong>{item.value}</strong>
               <span>{item.label}</span>
-            </article>
+            </motion.article>
           ))}
-        </div>
+        </motion.div>
       </section>
 
+      {/* ── Editorial slider ── */}
       <section className="about-editorial">
+        <motion.div
+          className="about-section-label"
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.5 }}
+        >
+          <motion.p className="about-eyebrow" variants={fadeUp}>Work & Craft</motion.p>
+          <motion.h2 variants={fadeUp}>Editorial Portfolio</motion.h2>
+        </motion.div>
+
         <div className="about-editorial-slider-wrap">
           <Swiper
             modules={[Autoplay, Navigation, Pagination]}
@@ -144,27 +202,51 @@ function AboutPage() {
         </div>
 
         <div className="about-editorial-copy">
-          <p>
+          <motion.p
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.5 }}
+          >
             Having worked with a diverse range of faces for commercial, editorial and private
             events, Tanji adheres to an elegant yet glamorous aesthetic. Upon graduating with
             a Law LLB Honours Degree in London, what first ignited 10 years' experience in the
             professional makeup artist industry. Tanji has worked both nationally and
             internationally with notable and renowned publications such as VOGUE, ELLE and GQ.
-          </p>
-          <p>
+          </motion.p>
+          <motion.p
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.5 }}
+          >
             "I love that popular culture always influences beauty standards. It is ever evolving,
             which keeps it fascinating. Everyone's individual style needs specific catering,
             so I endeavour to approach this with the highest calibre of service."
-          </p>
-          <span>Tanjia Sayed</span>
+          </motion.p>
+          <motion.span
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.5 }}
+          >
+            Tanjia Sayed
+          </motion.span>
         </div>
       </section>
 
+      {/* ── Wedding story grid ── */}
       <section className="about-story">
-        <header className="about-story-head">
-          <p>29.06.22</p>
-          <h2>A Ritz Wedding</h2>
-        </header>
+        <motion.header
+          className="about-story-head"
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.4 }}
+        >
+          <motion.p variants={fadeUp}>29.06.22</motion.p>
+          <motion.h2 variants={fadeUp}>A Ritz Wedding</motion.h2>
+        </motion.header>
 
         <div className="about-story-grid">
           {weddingStory.map((img, index) => (
@@ -175,41 +257,67 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* ── Signature services ── */}
       <section className="about-signature">
-        <div className="about-section-heading">
-          <p>Signature Offering</p>
-          <h2>Beauty With Structure And Ease</h2>
-        </div>
+        <motion.div
+          className="about-section-heading"
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.4 }}
+        >
+          <motion.p variants={fadeUp}>Signature Offering</motion.p>
+          <motion.h2 variants={fadeUp}>Beauty With Structure And Ease</motion.h2>
+        </motion.div>
 
-        <div className="about-signature-grid">
+        <motion.div
+          className="about-signature-grid"
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {signatureServices.map((service) => (
-            <article className="about-service-card" key={service.title}>
+            <motion.article className="about-service-card" key={service.title} variants={fadeUp}>
               <h3>{service.title}</h3>
               <p>{service.text}</p>
-            </article>
+            </motion.article>
           ))}
-        </div>
+        </motion.div>
       </section>
 
+      {/* ── Philosophy ── */}
       <section className="about-philosophy">
-        <div className="about-philosophy-copy">
-          <p className="about-eyebrow">The Approach</p>
-          <h2>Luxury Should Feel Personal</h2>
-          <p>
+        <motion.div
+          className="about-philosophy-copy"
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <motion.p className="about-eyebrow" variants={fadeUp}>The Approach</motion.p>
+          <motion.h2 variants={fadeUp}>Luxury Should Feel Personal</motion.h2>
+          <motion.p variants={fadeUp}>
             Every booking is shaped around the person, the wardrobe, the lighting and the pace
             of the event. The result is beauty that feels polished in person, elegant in motion,
             and consistent across photography, film and real-life wear.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
-        <div className="about-philosophy-panel">
+        <motion.div
+          className="about-philosophy-panel"
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+        >
           {studioNotes.map((note, index) => (
-            <div className="about-note-row" key={note}>
+            <motion.div className="about-note-row" key={note} variants={fadeUp}>
               <span className="about-note-mark">{String(index + 1).padStart(2, "0")}</span>
               <p>{note}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </section>
     </main>
   );

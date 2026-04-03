@@ -1,0 +1,232 @@
+.policy-page {
+  position: relative;
+  background:
+    radial-gradient(circle at 8% 6%, rgba(255, 255, 255, 0.45), transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(74, 87, 64, 0.12), transparent 50%),
+    #dde8d7;
+  color: #2a1207;
+  padding: clamp(1.5rem, 4vw, 2.8rem) clamp(1rem, 4vw, 3rem) 4rem;
+  overflow: hidden;
+}
+
+.policy-page::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 260px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+.policy-page,
+.policy-page * {
+  box-sizing: border-box;
+}
+
+.policy-hero {
+  position: relative;
+  z-index: 1;
+  width: min(1060px, 100%);
+  margin: 0 auto 1.35rem;
+  padding: clamp(1.2rem, 2.6vw, 2.2rem);
+  border: 1px solid rgba(111, 82, 68, 0.2);
+  background:
+    linear-gradient(130deg, rgba(255, 255, 255, 0.96), rgba(250, 246, 241, 0.9));
+  box-shadow: 0 18px 36px rgba(42, 18, 7, 0.1);
+  border-radius: 18px;
+}
+
+.policy-hero__eyebrow {
+  margin: 0;
+  color: #5c463a;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.policy-hero h1 {
+  margin: 0.45rem 0 0.55rem;
+  font-size: clamp(2rem, 4.1vw, 3.2rem);
+  line-height: 0.98;
+  color: #2a1207;
+}
+
+.policy-hero p {
+  margin: 0;
+  max-width: 70ch;
+  line-height: 1.8;
+  color: rgba(42, 18, 7, 0.74);
+  font-size: 0.98rem;
+}
+
+.policy-layout {
+  position: relative;
+  z-index: 1;
+  width: min(1060px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(220px, 270px) 1fr;
+  gap: 1.15rem;
+}
+
+.policy-nav {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+  border: 1px solid rgba(111, 82, 68, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 26px rgba(42, 18, 7, 0.08);
+}
+
+.policy-nav h2 {
+  margin: 0;
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #6f5244;
+}
+
+.policy-nav ul {
+  list-style: none;
+  margin: 0.7rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.policy-nav a {
+  position: relative;
+  display: block;
+  padding: 0.58rem 0.75rem 0.58rem 1.6rem;
+  border: 1px solid rgba(111, 82, 68, 0.16);
+  color: #2a1207;
+  text-decoration: none;
+  font-size: 0.87rem;
+  border-radius: 999px;
+  transition: background 0.22s ease, border-color 0.22s ease, transform 0.22s ease;
+}
+
+.policy-nav a::before {
+  content: "";
+  position: absolute;
+  left: 0.7rem;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  transform: translateY(-50%) rotate(45deg);
+  background: linear-gradient(135deg, #b28c68, #4a5740);
+}
+
+.policy-nav a:hover,
+.policy-nav a.is-active {
+  background: rgba(74, 87, 64, 0.14);
+  border-color: rgba(74, 87, 64, 0.38);
+  transform: translateX(2px);
+}
+
+.policy-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.policy-card {
+  position: relative;
+  border: none;
+  background: rgba(255, 255, 255, 0.95);
+  padding: clamp(1.05rem, 2.4vw, 1.65rem);
+  scroll-margin-top: 102px;
+  border-radius: 16px;
+  box-shadow: 0 14px 28px rgba(42, 18, 7, 0.08);
+}
+
+.policy-card__label {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #6f5244;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.policy-card h3 {
+  margin: 0.3rem 0 0.4rem;
+  font-size: clamp(1.3rem, 2.3vw, 1.78rem);
+  color: #2a1207;
+}
+
+.policy-card__intro {
+  margin: 0;
+  color: rgba(42, 18, 7, 0.76);
+  line-height: 1.75;
+}
+
+.policy-card ul {
+  margin: 0.95rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.58rem;
+}
+
+.policy-card li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: rgba(42, 18, 7, 0.82);
+  line-height: 1.72;
+}
+
+.policy-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  transform: translateY(-50%) rotate(45deg);
+  background: linear-gradient(140deg, #b28c68, #4a5740);
+}
+
+@media (max-width: 900px) {
+  .policy-page {
+    padding-bottom: 3rem;
+  }
+
+  .policy-hero {
+    border-radius: 14px;
+  }
+
+  .policy-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .policy-nav {
+    position: static;
+    border-radius: 14px;
+  }
+
+  .policy-nav ul {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.15rem;
+    scrollbar-width: none;
+  }
+
+  .policy-nav ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .policy-nav li {
+    flex: 0 0 auto;
+  }
+
+  .policy-card {
+    border-radius: 14px;
+  }
+
+}

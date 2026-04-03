@@ -78,7 +78,6 @@ const ProductGallery = () => {
                 <span aria-hidden="true">&#8594;</span>
             </button>
 
-            <button className="view-btn">View all</button>
         </div>
     );
 };

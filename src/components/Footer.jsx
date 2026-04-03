@@ -29,7 +29,7 @@ const Footer = () => (
           <h3 className="footer-column-title">LEARN</h3>
           <ul className="footer-links-list">
             <li><a href="#privacy" className="footer-link">PRIVACY POLICY</a></li>
-            <li><a href="#terms" className="footer-link">TERMS OF SERVICES</a></li>
+            <li><a href="#terms" className="footer-link">TERMS OF SERVICE</a></li>
             <li><a href="#shipping" className="footer-link">SHIPPING POLICY</a></li>
             <li><a href="#refund" className="footer-link">REFUND POLICY</a></li>
           </ul>

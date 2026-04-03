@@ -1,5 +1,5 @@
 :root {
-  --guide-bg: #f6f4f1;
+  --guide-bg: #dde8d7;
   --guide-latte: #2a1207;
   --guide-chocolate: #6f5244;
   --guide-olive: #4a5740;
@@ -14,9 +14,8 @@
   min-height: calc(100vh - 120px);
   padding: 86px 20px;
   background:
-    radial-gradient(circle at 10% 5%, rgba(178, 140, 104, 0.2), transparent 44%),
-    radial-gradient(circle at 90% 95%, rgba(74, 87, 64, 0.16), transparent 50%),
-    linear-gradient(135deg, rgba(214, 194, 173, 0.22), transparent 44%),
+    radial-gradient(circle at 8% 6%, rgba(255, 255, 255, 0.45), transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(74, 87, 64, 0.12), transparent 50%),
     var(--guide-bg);
   overflow: hidden;
 }

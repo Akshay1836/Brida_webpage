@@ -1,5 +1,5 @@
 :root {
-  --bridal-bg: #f6f4f1;
+  --bridal-bg: #dde8d7;
   --bridal-latte: #2a1207;
   --bridal-chocolate: #6f5244;
   --bridal-olive: #4a5740;
@@ -9,14 +9,20 @@
 .bridal-service-page {
   min-height: calc(100vh - 120px);
   background:
-    radial-gradient(circle at 12% 8%, rgba(178, 140, 104, 0.2), transparent 42%),
-    radial-gradient(circle at 88% 92%, rgba(74, 87, 64, 0.14), transparent 52%),
+    radial-gradient(circle at 8% 6%, rgba(255, 255, 255, 0.45), transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(74, 87, 64, 0.12), transparent 50%),
     var(--bridal-bg);
+}
+
+.bridal-service-page,
+.bridal-service-page * {
+  box-sizing: border-box;
 }
 
 .bridal-service-hero {
   position: relative;
-  min-height: 63vh;
+  min-height: 70vh;
+  min-height: 85svh;
   overflow: hidden;
   display: grid;
   align-items: center;
@@ -225,7 +231,7 @@
 .bridal-service-side__image img {
   width: 100%;
   height: 100%;
-  min-height: 220px;
+  min-height: 280px;
   object-fit: cover;
   transition: transform 0.35s ease;
   border-radius: 0;
@@ -236,7 +242,7 @@
 }
 
 .bridal-service-side__image--one img {
-  min-height: 300px;
+  min-height: 380px;
 }
 
 @keyframes bridalHeroFloat {
@@ -253,7 +259,7 @@
 
 @media (max-width: 980px) {
   .bridal-service-hero {
-    min-height: 56vh;
+    min-height: 62svh;
   }
 
   .bridal-service-content {
@@ -268,7 +274,7 @@
 
 @media (max-width: 640px) {
   .bridal-service-hero {
-    min-height: 52vh;
+    min-height: 88svh;
   }
 
   .bridal-service-hero__content {

@@ -1,7 +1,10 @@
 .masterclass-page {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, #f7f4f1 0%, #f2ece6 42%, #ede5de 100%);
+  background:
+    radial-gradient(circle at 8% 6%, rgba(255, 255, 255, 0.45), transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(74, 87, 64, 0.12), transparent 50%),
+    #dde8d7;
   color: var(--color-latte);
   padding: 1.4rem 1.2rem 4.4rem;
 }
