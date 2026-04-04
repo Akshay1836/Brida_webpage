@@ -19,7 +19,7 @@ const Gallery = () => (
     <div className="gallery-scroll">
       {galleryImages.map((img, i) => (
         <div className="gallery-card" key={i}>
-          <img src={img} alt="Bridal Gallery" className="gallery-img" />
+          <img src={img} alt="Bridal Gallery" className="gallery-img" loading="lazy" />
           <div className="gallery-overlay">
             <InstagramIcon />
           </div>

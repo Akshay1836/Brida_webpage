@@ -8,19 +8,19 @@ import "../styles/BridalTestimonials.css";
 
 const testimonials = [
   {
-    title: "THOROUGH & EFFICIENT",
-    text: "The booking process was so easy, the appointment was speedy & efficient. Tanji delivered my dream bridal look with minimum direction and my professional photos came out incredible. I felt so beautiful.",
-    author: "-- Ammarah Khan"
+    title: "SEAMLESS EXPERIENCE",
+    text: "From booking to the final touch, everything felt effortless and refined. The look was created with such precision that it exceeded all expectations. The overall experience felt truly special.",
+    author: "-- Client Review"
   },
   {
-    title: "ABSOLUTE PERFECTION",
-    text: "Tanji understood exactly what I wanted from my requests. My makeup lasted flawlessly through tears, dancing, and countless photos. I've never felt more beautiful or more myself. I couldn't be happier with my experience",
-    author: "-- Alisha Kaur"
+    title: "FLAWLESS RESULTS",
+    text: "Every detail was understood and executed beautifully. The makeup remained perfect throughout the entire event, capturing elegance in every moment. It was a look that felt both stunning and completely authentic.",
+    author: "-- Client Review"
   },
   {
-    title: "MEMORABLE EXPERIENCE",
-    text: "I was obsessed, my problematic skin looked flawless, the photos turned out beautiful and the appointment with Tanji ran perfectly, can we do it all again! Everyone loved and raved about my look!",
-    author: "-- Fatima Ahmed"
+    title: "UNFORGETTABLE MOMENT",
+    text: "The entire experience was nothing short of exceptional. The finish was radiant, the attention to detail unmatched, and the final look received endless compliments. A truly memorable transformation.",
+    author: "-- Client Review"
   }
 ];
 

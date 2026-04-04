@@ -57,8 +57,8 @@ const Navbar = () => {
       {/* Navbar */}
       <nav className="navbar">
         <a href="#home" className="navbar-logo" aria-label="Go to home page">
-          <span className="navbar-logo__eyebrow">By Tanji</span>
-          <span className="navbar-logo__title">Tanji Bridal</span>
+          <span className="navbar-logo__eyebrow">By Zara</span>
+          <span className="navbar-logo__title">Zara Bridal</span>
         </a>
 
         <div className="navbar-links">

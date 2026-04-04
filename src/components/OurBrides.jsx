@@ -42,8 +42,8 @@ function OurBrides() {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <p className="our-brides__kicker">Our Brides</p>
-        <h2 id="our-brides-title">Real moments, timeless stories.</h2>
+        <p className="our-brides__kicker">Bridal Moments</p>
+        <h2 id="our-brides-title">Real Moments, Timeless Stories.</h2>
         <p className="our-brides__copy">
           Every celebration is styled with intention and a signature glow crafted
           for the bride.

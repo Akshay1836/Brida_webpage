@@ -21,11 +21,9 @@ const ProductGallery = () => {
     return (
         <div className="gallery-container">
             <div className="luxe-essentials-header">
-                <h2 className="luxe-essentials-title">SHOP ESSENTIALS</h2>
+                <h2 className="luxe-essentials-title">THE COLLECTION</h2>
                 <div className="luxe-essentials-subtitle">
-                    HIGH PERFORMANCE PIGMENTS, EFFORTLESS BLENDING, CAMERA READY FINISHES,
-                    IN LIGHTWEIGHT & REFINED PACKAGED TREASURES
-                </div>
+A COLLECTION OF GLOWING BRIDES, FLAWLESS FINISHES, AND UNFORGETTABLE WEDDING MOMENTS, CAPTURING TIMELESS ELEGANCE, REFINED ARTISTRY, AND BEAUTY THAT RADIATES WITH CONFIDENCE AND GRACE.                </div>
             </div>
 
             <Swiper

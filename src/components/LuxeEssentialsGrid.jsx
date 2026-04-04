@@ -46,6 +46,7 @@ function ProductCard({ p }) {
           src={hovered && p.hoverImg ? p.hoverImg : p.img}
           alt={p.name}
           className="luxe-card-img"
+          loading="lazy"
         />
         <button className="luxe-card-plus" aria-label="Add to cart">
           <PlusIcon />

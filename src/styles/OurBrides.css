@@ -45,6 +45,7 @@
 
 .our-brides__card {
   margin: 0;
+  
 }
 
 .our-brides__card img {
@@ -60,6 +61,7 @@
   font-size: 1.15rem;
   font-weight: 500;
   letter-spacing: 0.02em;
+  color:var(--our-brides-text)
 }
 
 @media (max-width: 900px) {

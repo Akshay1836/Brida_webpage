@@ -93,14 +93,14 @@ function AboutPage() {
           animate="show"
         >
           <motion.p className="about-hero-eyebrow" variants={fadeUp}>
-            Beauty Artistry · London
+            Feel confident. Feel beautiful. Be unforgettable.
           </motion.p>
           <motion.h1 variants={fadeUp}>
-            The Vision Behind<br /><em>By Tanji</em>
+            The Story Behind<br /><em>By Tanji</em>
           </motion.h1>
           <motion.p className="about-hero-sub" variants={fadeUp}>
-            A decade of refined craft, published artistry, and beauty<br className="bp-hide" />
-            designed to feel as beautiful as it looks.
+            Blending creativity and expertise to deliver beauty that feels natural,<br className="bp-hide" />
+             confident, and refined.
           </motion.p>
         </motion.div>
       </section>
@@ -125,9 +125,7 @@ function AboutPage() {
           viewport={{ once: true, amount: 0.4 }}
         >
           <motion.p variants={fadeUp}>
-            Tanjia Sayed is a digital luxury content creator, published professional bridal
-            makeup artist, and founder of By Tanji Beauty, based in London. Her demographic
-            comprises both an international bridal clientele and a range of commercial brands.
+            Professional bridal makeup artist and digital creator, and the founder of [Your Brand Name]. Serving a diverse, international bridal clientele, she also partners with leading brands to deliver refined and elegant beauty experiences.
           </motion.p>
         </motion.div>
 
@@ -208,11 +206,9 @@ function AboutPage() {
             whileInView="show"
             viewport={{ once: true, amount: 0.5 }}
           >
-            Having worked with a diverse range of faces for commercial, editorial and private
-            events, Tanji adheres to an elegant yet glamorous aesthetic. Upon graduating with
-            a Law LLB Honours Degree in London, what first ignited 10 years' experience in the
-            professional makeup artist industry. Tanji has worked both nationally and
-            internationally with notable and renowned publications such as VOGUE, ELLE and GQ.
+            With extensive experience across commercial, editorial, and private events, she is known for an aesthetic that blends timeless elegance with modern glamour. What began as a passion evolved into over a decade of expertise in the professional makeup industry.
+
+Her work spans both national and international platforms, collaborating with renowned publications and distinguished brands.
           </motion.p>
           <motion.p
             variants={fadeUp}
@@ -220,9 +216,7 @@ function AboutPage() {
             whileInView="show"
             viewport={{ once: true, amount: 0.5 }}
           >
-            "I love that popular culture always influences beauty standards. It is ever evolving,
-            which keeps it fascinating. Everyone's individual style needs specific catering,
-            so I endeavour to approach this with the highest calibre of service."
+            “Beauty is constantly inspired by evolving culture, making it both dynamic and deeply personal. Every individual deserves a look tailored to their unique style, delivered with the highest level of care and artistry.”
           </motion.p>
           <motion.span
             variants={fadeUp}
@@ -245,7 +239,7 @@ function AboutPage() {
           viewport={{ once: true, amount: 0.4 }}
         >
           <motion.p variants={fadeUp}>29.06.22</motion.p>
-          <motion.h2 variants={fadeUp}>A Ritz Wedding</motion.h2>
+          <motion.h2 variants={fadeUp}>Dream Wedding</motion.h2>
         </motion.header>
 
         <div className="about-story-grid">

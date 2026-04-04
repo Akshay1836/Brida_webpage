@@ -51,6 +51,7 @@ const ProductCard = ({ name, price, img, hoverImg }) => {
           src={hovered && hoverImg ? hoverImg : img}
           alt={name}
           className="product-img"
+          loading="lazy"
         />
       </div>
       <div className="product-info">

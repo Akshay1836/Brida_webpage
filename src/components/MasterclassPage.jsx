@@ -168,8 +168,8 @@ function MasterclassPage() {
         animate="show"
       >
         <div className="masterclass-section-head">
-          <p>Movable Gallery</p>
-          <h3>Drag To Explore Class Moments</h3>
+          <p>Skill Studio</p>
+          <h3>Learn. Create And Elevate Your Artistry.</h3>
         </div>
 
         <div className="masterclass-featured-image">
